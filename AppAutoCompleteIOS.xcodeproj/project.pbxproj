@@ -15,6 +15,7 @@
 		3AD2EAFC20F623DC00D1B51C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AD2EAFA20F623DC00D1B51C /* LaunchScreen.storyboard */; };
 		3AD2EB0720F623DC00D1B51C /* AppAutoCompleteIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD2EB0620F623DC00D1B51C /* AppAutoCompleteIOSTests.swift */; };
 		3AD2EB1220F623DC00D1B51C /* AppAutoCompleteIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD2EB1120F623DC00D1B51C /* AppAutoCompleteIOSUITests.swift */; };
+		AE7B942FF89E535F262DDC6E /* Pods_AppAutoCompleteIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2C2BC97109535D298053CED /* Pods_AppAutoCompleteIOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,9 @@
 		3AD2EB0D20F623DC00D1B51C /* AppAutoCompleteIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppAutoCompleteIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AD2EB1120F623DC00D1B51C /* AppAutoCompleteIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAutoCompleteIOSUITests.swift; sourceTree = "<group>"; };
 		3AD2EB1320F623DC00D1B51C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EC988B612292DBB7D75E568 /* Pods-AppAutoCompleteIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppAutoCompleteIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppAutoCompleteIOS/Pods-AppAutoCompleteIOS.release.xcconfig"; sourceTree = "<group>"; };
+		897E62EA83850B2EF0D0EC4F /* Pods-AppAutoCompleteIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppAutoCompleteIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppAutoCompleteIOS/Pods-AppAutoCompleteIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		B2C2BC97109535D298053CED /* Pods_AppAutoCompleteIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppAutoCompleteIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE7B942FF89E535F262DDC6E /* Pods_AppAutoCompleteIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29A32B551F08E2B56EE7777E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2C2BC97109535D298053CED /* Pods_AppAutoCompleteIOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3AD2EAE220F623D000D1B51C = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +96,8 @@
 				3AD2EB0520F623DC00D1B51C /* AppAutoCompleteIOSTests */,
 				3AD2EB1020F623DC00D1B51C /* AppAutoCompleteIOSUITests */,
 				3AD2EAEC20F623D000D1B51C /* Products */,
+				E78E67347A9F663E0EE3BDAF /* Pods */,
+				29A32B551F08E2B56EE7777E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +143,15 @@
 			path = AppAutoCompleteIOSUITests;
 			sourceTree = "<group>";
 		};
+		E78E67347A9F663E0EE3BDAF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				897E62EA83850B2EF0D0EC4F /* Pods-AppAutoCompleteIOS.debug.xcconfig */,
+				6EC988B612292DBB7D75E568 /* Pods-AppAutoCompleteIOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +159,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3AD2EB1620F623DC00D1B51C /* Build configuration list for PBXNativeTarget "AppAutoCompleteIOS" */;
 			buildPhases = (
+				C8D2D00C7DC1491BA00C3EA6 /* [CP] Check Pods Manifest.lock */,
 				3AD2EAE720F623D000D1B51C /* Sources */,
 				3AD2EAE820F623D000D1B51C /* Frameworks */,
 				3AD2EAE920F623D000D1B51C /* Resources */,
+				484A19B086DC61D7B421333F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,6 +279,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		484A19B086DC61D7B421333F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AppAutoCompleteIOS/Pods-AppAutoCompleteIOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SearchTextField/SearchTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SearchTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AppAutoCompleteIOS/Pods-AppAutoCompleteIOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8D2D00C7DC1491BA00C3EA6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppAutoCompleteIOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3AD2EAE720F623D000D1B51C /* Sources */ = {
@@ -432,6 +501,7 @@
 		};
 		3AD2EB1720F623DC00D1B51C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 897E62EA83850B2EF0D0EC4F /* Pods-AppAutoCompleteIOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +519,7 @@
 		};
 		3AD2EB1820F623DC00D1B51C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EC988B612292DBB7D75E568 /* Pods-AppAutoCompleteIOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
